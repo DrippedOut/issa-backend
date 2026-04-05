@@ -19,7 +19,7 @@ from build_conversation_turns import (
 )
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app)
 
 
 def _load_editor_system_prompt() -> str:
